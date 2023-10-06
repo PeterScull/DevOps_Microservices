@@ -1,4 +1,4 @@
-[![CircleCI](https://dl.circleci.com/insights-snapshot/gh/PeterScull/DevOps_Microservices/master/workflow/badge.svg?window=30d)](https://app.circleci.com/insights/github/PeterScull/DevOps_Microservices/workflows/workflow/overview?branch=master&reporting-window=last-30-days&insights-snapshot=true)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/PeterScull/DevOps_Microservices/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/PeterScull/DevOps_Microservices/tree/master)
 
 
 ## Cloud DevOps ND - C4- Microservices at Scale using AWS & Kubernetes - Supporting Material and Project Starter
