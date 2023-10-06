@@ -1,0 +1,53 @@
+During the duration of this project i have learnt what docker images are, how to interact with docker. Docker allows me to create container technology, including an execution engine, collaboration platform via DockerHub and a container format called dockerfiles.
+I have also learnt how to configure local enviroments which i am able to build my microservices upon.
+I have gained the understanding of what makefiles are and how they help to speed up my programming. The main benefit of using a to ensure the ability to enforce a convention, it also helps to reduce the change in errors if we use this makefile within other projects in the future. A makefile can involves the tools needed to build and test your projects combined into one document. A couple of the main steps you can use within your makefile is. Make Install: will copy the built program, and its libraries and documentation, to the correct locations. Make Lint: Tests your code quality to give it a score out of 10, as your code may have no errors but it may not be the best quality written.
+I have also learnt how to lint a dockerfile using a program called hadolint. hadolint is a command line tool that helps you ensure your Dockerfiles follow best practices. I can also use pylint as a tool to check your python code has no syntax errors. The Black tools, which allows me to format the text of python source codes automatically. The pytest tools which allows m to run tests on my python source code.
+I have also learnt what ports are used for what circumstances aka i'd run  Hypertext Transfer Protocol (HTTP) on port 80 and can run HTTP Secure (HTTPS) on port 443.
+I have also learnt what swagger is as an tool to help describe the structure of your APIs so that machines can read them.
+I have learnt what Kubernetes is used for and why we would use it. Kubernetes is an open-source system for automating the operations of containerized applications. a few examples of why we may use it is that is a used, created and control opensource website provided by google. autoscaling is built into the tool already and doesn't need me to manually dode it. it has built in service discovery. It is built with internal container health checks to make sure everything is working as expected and will highlight when its not working correctly. A terms which i have learnt while using kubernetes is:
+Kubernetes Pods:  which is a group of 1 or more containers
+Kubernetes Containers: is a Docker image that deploys into a Kubernetes cluster
+Kubernetes Clusters: a deployment of Kubernetes that contains the entire ecosystem of Kubernetes components, including nodes, pods, the API, and containers.
+
+Throughout my project i have been asked to Build a dockerfile to complete this i had too:
+- Specify a working directory.
+- Copy the app.py source code to that directory
+- Install any dependencies in requirements.txt
+- expose port 80 to the contianer.
+- finally to Specify that the app runs at container launch.
+I was also required to run "make Lint" to ensure my code quality is 10/10 and see if any errors are caught by hadolint. 
+
+I was also asked to run a container and make a prediction upon it.
+ within this project i was asked to complete the following steps:
+	Build the docker image from the Dockerfile
+	List the created docker images
+	Run the containerized Flask app; publish the container’s port to a host port.
+
+I was also tasked to doImprove Logging & Save Output.
+Within this project i was asked to gain an understanding of what my app.py does and understanding is reponsibilities of:
+Accepting an input JSON payload, and converting that into a DataFrame.
+Scaling the DataFrame payload.
+Passing the scaled data to a pre-trained model and getting back a prediction.
+I asked to add create a prediciton log statement:
+To do this i was asked to run my docker file (./run_docker.sh) and predicition (./make_prediction.sh) file respectively. the run_docker.sh produced the result which can be found within docker_output.txt
+
+I have also been asked to upload a docker image. to do this i was asked to program the file "upload_docker.sh" to do this. to carry out this i followed the steps:
+I was asked to Define a dockerpath.
+Authenticate and tag this image.
+and to finally push your docker image to the dockerpath.
+to make sure it was working correctly i ran ./upload_docker.sh.
+
+I also Configure Kubernetes to Run Locally:
+to do this task i needed to install Minikube which allowed me to turn the terminal command "minikube start" which ran kubernetes on my local device
+
+In the end i was taked to Deploy with Kubernetes and Save Output Logs:
+As part of this i was asked to:
+	Define a dockerpath which will be “/path”
+	Run the docker container with kubectl
+ 	List the kubernetes pods
+	Forward the container port to a host port
+After completing the above steps I ran the command "./run_kubernetes.sh" this allowed me to run my containerized application. I also used the command Kubectl which allows my interface for interacting with the kubernetes cluster.
+As part of this project i was also asked to rerun "./make_prediction.sh".
+I pasted the outcome of my run_kubernetes.sh and ./make_prediction.sh files together into the document: "kubernetes.out.txt"
+
+In the end i was asked to delete my cluster using the command "minikube delete" as this makes sure my resources are clean.
